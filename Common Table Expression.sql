@@ -1,4 +1,3 @@
-```sql id="ar5nx8"
 /* =============================================================
    CTE AND CUSTOMER TOTAL SALES ANALYSIS
    ============================================================= */
@@ -23,4 +22,3 @@ JOIN Toplamlar AS T
     ON C.CustomerID = T.CustomerID
 ORDER BY 
     T.Toplam_Miktar DESC;
-```
