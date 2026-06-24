@@ -1,23 +1,61 @@
-# 📊 SQL E-Commerce Data Analytics Portfolio
+# SQL & Power BI E-Commerce Data Analysis Portfolio
 
-Bu depo, e-ticaret sektöründeki veri analitiği yetkinliklerimi sergilediğim iki farklı veri modeli üzerinden kurgulanmıştır:
+Bu repo, e-ticaret verileri üzerinde yaptığım SQL veri analizi çalışmaları ve Power BI dashboard projelerini içerir.
 
-1. **Brezilya E-Ticaret Veri Seti (Large-Scale):** Gerçek dünya karmaşıklığına sahip, milyonlarca satırlık büyük veri setleri üzerinde yapılan performanslı sorgulamalar.
-2. **Kişisel E-Ticaret Simülasyonu (Small-Scale):** Sıfırdan tasarladığım, ilişkisel veri tabanı (RDBMS) mantığını ve iş kurallarını (Business Logic) test ettiğim çevik veri modeli.
+Çalışmalarda temel veri sorgulama, aggregate analizler, JOIN işlemleri, CTE, subquery, window functions ve Power BI dashboard tasarımı uygulanmıştır.
 
-## 🎯 Çalışma Vizyonum
-Bu projelerde hedefim sadece SQL komutlarını çalıştırmak değil; veriyi parçalara ayırarak şirket cirosunu, müşteri davranışlarını ve pazar trendlerini anlamlı raporlara dönüştürmektir.
+## Repo İçeriği
 
-## 📂 Proje Modülleri
-Kodlarımın tamamı, okunabilirlik ve sürdürülebilirlik ilkelerine dayanarak şu başlıklar altında yapılandırılmıştır:
+### 1. SQL Veri Analizi Çalışmaları
 
-* **Basic.sql**: Ham veri temizliği, hızlı filtreleme ve temel veri çekme yöntemleri.
-* **Aggregate Functions.sql**: Finansal performans göstergeleri (toplam ciro, ortalama sepet tutarı, müşteri bazlı toplam harcama).
-* **Joins.sql**: Farklı veri kaynaklarını birleştirerek operasyonel bütünlüğü sağladığım tablo ilişkileri.
-* **Subquery and Deep Filter Analysis.sql**: Statik filtreler yerine, sistemin kendi değerlerine dayanan dinamik ve gelişmiş veri analizi.
-* **Common Table Expression.sql**: Karmaşık veri setlerini yönetilebilir ve optimize parçalara böldüğüm geçici tablo pratikleri.
-* **Window Function Expression.sql**: Müşteri segmentasyonu, pazar sıralaması ve kümülatif kampanya analizi gibi ileri seviye analitik teknikleri.
+Bu bölümde e-ticaret verileri üzerinde yazdığım SQL sorguları yer almaktadır.
 
----
+* `Temel.sql`
+  Temel SELECT sorguları, filtreleme, sıralama ve veri kontrolü çalışmaları.
 
-*Not: Her bir `.sql` dosyasının içerisinde, yazdığım sorguların **ticari karşılığını ve neden bu yöntemi tercih ettiğimi** anlatan detaylı açıklama notları bulunmaktadır.*
+* `Toplama Fonksiyonları.sql`
+  COUNT, SUM, AVG, MIN ve MAX gibi aggregate fonksiyonları ile temel metrik analizleri.
+
+* `Join.sql`
+  Müşteri, sipariş, ödeme ve ürün tablolarını birleştirme çalışmaları.
+
+* `Ortak Tablo İfadesi.sql`
+  CTE kullanarak sorguları daha okunabilir ve düzenli hale getirme çalışmaları.
+
+* `Alt Sorgu ve Derin Filtre Analizi.sql`
+  Subquery kullanarak daha detaylı filtreleme ve analiz çalışmaları.
+
+* `Pencere Fonksiyonu İfadesi.sql`
+  ROW_NUMBER ve benzeri window function yapıları ile müşteri sıralama ve segmentasyon çalışmaları.
+
+## 2. Power BI Dashboard Çalışmaları
+
+### Training E-Commerce Dashboard
+
+Power BI eğitiminde öğrendiğim dashboard yapısını videoya bakmadan tekrar kurduğum çalışmadır.
+
+Bu dashboard’da KPI kartları, satış grafikleri, ödeme yöntemi analizi, ürün tablosu, ülke bazlı satış analizi ve slicer kullanımı uygulanmıştır.
+
+[Dashboard klasörünü görüntüle](./01-Training-Ecommerce-Dashboard)
+
+### Brazil Olist E-Commerce Dashboard
+
+Olist Brazil E-Commerce veri seti üzerinde geliştirdiğim Power BI dashboard çalışmasıdır.
+
+Bu dashboard’da müşteri sayısı, sipariş sayısı, ödeme tutarı, ortalama sipariş değeri, ödeme tipi dağılımı, kategori filtresi ve eyalet bazlı dağılım analiz edilmiştir.
+
+[Dashboard klasörünü görüntüle](./02-Brazil-Olist-Ecommerce-Dashboard)
+
+## Kullanılan Teknolojiler
+
+* SQL
+* Power BI
+* DAX
+* Data Model
+* KPI Cards
+* Slicers
+* Dashboard Design
+
+## Amaç
+
+Bu portföyün amacı, SQL ile veri analizi yapabildiğimi ve Power BI ile bu analizleri anlaşılır dashboardlara dönüştürebildiğimi göstermektir.
