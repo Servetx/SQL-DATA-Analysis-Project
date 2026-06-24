@@ -22,16 +22,23 @@ Amaç, öğrendiğim KPI kartlarını, slicer kullanımını, DAX ölçülerini,
 * Category Slicer
 
 ## Uygulanan Konular
+## Power BI Dashboardlarda Kullanılan Konular
 
-* KPI Cards
-* DAX Measures
-* Previous Month Comparison
-* Conditional Formatting
-* Slicers
-* Donut Chart
-* Column Chart
-* Map Visual
-* Product Table
+* KPI Kartları
+* DAX Ölçüleri
+* Önceki Ay Karşılaştırması
+* Büyüme Oranı Ölçüleri
+* Koşullu Biçimlendirme
+* Ay Dilimleyici
+* Kategori Dilimleyici / Filtresi
+* Donut Grafiği
+* Sütun Grafiği
+* Harita Görseli
+* Dinamik Ay Vurgulama
+* AOV Hesaplama
+* Ödeme Türü Analizi
+* Aylık Satış / Ödeme Analizi
+
 
 ## Proje Amacı
 
