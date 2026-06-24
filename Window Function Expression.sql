@@ -1,7 +1,12 @@
+```sql
 /* =============================================================
-   WINDOW FUNCTION EXPRESSION VE KAMPANYA ANALİZİ PRATİKLERİ
+   WINDOW FUNCTIONS AND CUSTOMER SEGMENTATION PRACTICES
+   Dataset: Olist Brazil E-Commerce
    ============================================================= */
 
+
+-- Müşterileri toplam harcamalarına göre segmentlere ayırır.
+-- ROW_NUMBER ile her şehir içinde en yüksek harcama yapan müşteriler sıralandı.
 SELECT
     C.Customer_id,
     C.Customer_city,
@@ -11,19 +16,27 @@ SELECT
         WHEN SUM(Oi.Price) >= 4799 THEN 'Vip'
         ELSE 'Standart'
     END AS Musteri_Segmenti,
-    ROW_NUMBER() OVER (PARTITION BY C.Customer_City ORDER BY SUM(Oi.Price) DESC) Sehir_ici_sıra
-FROM df_Customers C
-JOIN df_Orders O ON C.customer_id = O.customer_id
-JOIN df_OrderItems Oi ON O.order_id = Oi.order_id
-GROUP BY C.customer_id, C.customer_city
-HAVING SUM(Oi.Price) >= 0.8500
-ORDER BY Toplam_Fiyat DESC, Sehir_ici_sıra ASC;
+    ROW_NUMBER() OVER (
+        PARTITION BY C.Customer_City 
+        ORDER BY SUM(Oi.Price) DESC
+    ) AS Sehir_ici_sira
+FROM df_Customers AS C
+JOIN df_Orders AS O 
+    ON C.customer_id = O.customer_id
+JOIN df_OrderItems AS Oi 
+    ON O.order_id = Oi.order_id
+GROUP BY 
+    C.customer_id, 
+    C.customer_city
+HAVING 
+    SUM(Oi.Price) >= 0.8500
+ORDER BY 
+    Toplam_Fiyat DESC, 
+    Sehir_ici_sira ASC;
 
--- NEDEN BÖYLE YAZDIK?: 
--- Müşterileri harcamalarına göre segmentlere ayırıp,
---her şehrin en çok harcayanşampiyonlarını 'ROW_NUMBER' ile yukarıdan aşağıya listelemek için kullandık.
 
-
+-- Belirli şehirlerdeki müşterileri toplam harcamalarına göre segmentlere ayırır.
+-- LEFT JOIN kullanılarak siparişi olmayan müşteriler de analizde tutuldu.
 SELECT
     C.Customer_id,
     C.Customer_city,
@@ -33,20 +46,30 @@ SELECT
         WHEN SUM(Oi.Price) >= 4799 THEN 'Vip'
         ELSE 'Standart'
     END AS Musteri_Segmenti,
-    ROW_NUMBER() OVER (PARTITION BY C.Customer_City ORDER BY SUM(Oi.Price) DESC) Sehir_ici_sıra
-FROM df_Customers C
-LEFT JOIN df_Orders O ON C.customer_id = O.customer_id
-LEFT JOIN df_OrderItems Oi ON O.order_id = Oi.order_id
-WHERE C.customer_city IN ('osasco', 'sao paulo', 'sorocaba')
-GROUP BY C.customer_id, C.customer_city
-HAVING SUM(Oi.Price) >= 0.8500 OR SUM(Oi.Price) IS NULL
-ORDER BY Toplam_Fiyat DESC, Sehir_ici_sıra ASC;
+    ROW_NUMBER() OVER (
+        PARTITION BY C.Customer_City 
+        ORDER BY SUM(Oi.Price) DESC
+    ) AS Sehir_ici_sira
+FROM df_Customers AS C
+LEFT JOIN df_Orders AS O 
+    ON C.customer_id = O.customer_id
+LEFT JOIN df_OrderItems AS Oi 
+    ON O.order_id = Oi.order_id
+WHERE 
+    C.customer_city IN ('osasco', 'sao paulo', 'sorocaba')
+GROUP BY 
+    C.customer_id, 
+    C.customer_city
+HAVING 
+    SUM(Oi.Price) >= 0.8500 
+    OR SUM(Oi.Price) IS NULL
+ORDER BY 
+    Toplam_Fiyat DESC, 
+    Sehir_ici_sira ASC;
 
--- NEDEN BÖYLE YAZDIK?: 
--- Hedeflenen 3 şehirdeki sadık müşterileri listelerken, 'LEFT JOIN' ve 'IS NULL' kullanarak sisteme kayıtlı olup henüz hiç alışveriş yapmamış,
---potansiyel kampanya müşterilerini de kaçırmamak için kullandık.
 
-
+-- Belirli şehirlerdeki müşteri segmentlerini daha okunabilir fiyat formatıyla listeler.
+-- ROUND ile toplam harcama değeri iki ondalık basamağa yuvarlandı.
 SELECT
     C.Customer_id,
     C.Customer_city,
@@ -56,19 +79,24 @@ SELECT
         WHEN SUM(Oi.Price) >= 4799 THEN 'Vip'
         ELSE 'Standart'
     END AS Musteri_Segmenti,
-    ROW_NUMBER() OVER (PARTITION BY C.Customer_City ORDER BY SUM(Oi.Price) DESC) Sehir_ici_sıra
-FROM df_Customers C
-LEFT JOIN df_Orders O ON C.customer_id = O.customer_id
-LEFT JOIN df_OrderItems Oi ON O.order_id = Oi.order_id
-WHERE C.customer_city IN ('osasco', 'sao paulo', 'sorocaba')
-GROUP BY C.customer_id, C.customer_city
-HAVING SUM(Oi.Price) >= 0.8500 OR SUM(Oi.Price) IS NULL
-ORDER BY Toplam_Fiyat DESC, Sehir_ici_sıra ASC;
-
--- NEDEN BÖYLE YAZDIK?: 
--- Hedeflenen 3 şehirdeki sadık müşterileri listelerken, 'LEFT JOIN' ve 'IS NULL' kullanarak 
--- sisteme kayıtlı olup henüz hiç alışveriş yapmamış potansiyel kampanya müşterilerini de 
--- kaçırmamak için kullandık. 'ROUND' fonksiyonu ile de virgülden sonraki karmaşık kuruş 
--- hanelerini temizleyip raporu okunabilir hale getirdik.
-
-
+    ROW_NUMBER() OVER (
+        PARTITION BY C.Customer_City 
+        ORDER BY SUM(Oi.Price) DESC
+    ) AS Sehir_ici_sira
+FROM df_Customers AS C
+LEFT JOIN df_Orders AS O 
+    ON C.customer_id = O.customer_id
+LEFT JOIN df_OrderItems AS Oi 
+    ON O.order_id = Oi.order_id
+WHERE 
+    C.customer_city IN ('osasco', 'sao paulo', 'sorocaba')
+GROUP BY 
+    C.customer_id, 
+    C.customer_city
+HAVING 
+    SUM(Oi.Price) >= 0.8500 
+    OR SUM(Oi.Price) IS NULL
+ORDER BY 
+    Toplam_Fiyat DESC, 
+    Sehir_ici_sira ASC;
+```
