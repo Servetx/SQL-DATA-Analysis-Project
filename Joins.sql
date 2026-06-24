@@ -19,7 +19,7 @@ SELECT
 FROM df_customers AS c
 JOIN df_orders AS o 
     ON c.customer_id = o.customer_id
-JOIN df_order_items AS oi 
+JOIN JOIN df_OrderItems AS oi  AS oi 
     ON o.order_id = oi.order_id
 JOIN df_payments AS p
     ON oi.order_id = p.order_id
