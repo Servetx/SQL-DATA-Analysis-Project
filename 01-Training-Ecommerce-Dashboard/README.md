@@ -39,7 +39,7 @@ Amaç, öğrendiğim KPI kartlarını, slicer kullanımını, DAX ölçülerini,
 * Ödeme Türü Analizi
 * Aylık Satış / Ödeme Analizi
 
-##Kullanılan DAX Ölçüleri
+## Kullanılan DAX Ölçüleri
 
 Dax Ölçüleri dax Adlı Klasörde
 
