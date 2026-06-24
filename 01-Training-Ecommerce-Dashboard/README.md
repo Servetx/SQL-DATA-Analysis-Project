@@ -39,6 +39,10 @@ Amaç, öğrendiğim KPI kartlarını, slicer kullanımını, DAX ölçülerini,
 * Ödeme Türü Analizi
 * Aylık Satış / Ödeme Analizi
 
+Kullanılan DAX Ölçüleri
+Bu kontrol panelinde KPI kartları, önceki karşılaştırmalar, büyüme oranları ve seçili ay vurgulama işlemleri için DAX ölçümleri kullanıldı.
+
+Dax Ölçüleri dax Adlı Klasörde
 
 ## Proje Amacı
 
