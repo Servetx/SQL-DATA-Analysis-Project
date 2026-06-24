@@ -1,4 +1,4 @@
-```sql
+
 /* =============================================================
    BASIC SQL QUERIES AND FILTERING PRACTICES
    Dataset: Olist Brazil E-Commerce
