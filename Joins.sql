@@ -40,9 +40,9 @@ SELECT
     o.amount
 FROM customers AS c
 LEFT JOIN orders AS o 
-    ON c.customerid = o.customerid
+    ON c.CustomerID = o.CustomerID
 LEFT JOIN products AS p
-    ON o.productid = p.productid;
+    ON o.ProductID = p.ProductID;
 
 
 /* ---------------------------------------------------------------------------------
@@ -59,9 +59,9 @@ SELECT
     p.productname
 FROM customers AS c
 FULL JOIN orders AS o
-    ON c.customerid = o.customerid
+    ON c.CustomerID = o.CustomerID
 FULL JOIN products AS p 
-    ON o.productid = p.productid;
+    ON o.ProductID = p.ProductID;
 
 
 /* ---------------------------------------------------------------------------------
@@ -78,7 +78,6 @@ SELECT
     p.productname
 FROM customers AS c
 RIGHT JOIN orders AS o
-    ON c.customerid = o.customerid
+    ON c.CustomerID = o.CustomerID
 RIGHT JOIN products AS p 
-    ON o.productid = p.productid;
-```
+    ON o.ProductID = p.ProductID;
