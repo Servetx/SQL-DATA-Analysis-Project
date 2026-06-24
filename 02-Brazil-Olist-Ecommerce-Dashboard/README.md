@@ -5,6 +5,16 @@ Bu proje, Olist Brazil E-Commerce veri seti üzerinde geliştirdiğim Power BI d
 Dashboard’da müşteri, sipariş, ödeme tutarı, ortalama sipariş değeri, ödeme tipi, kategori ve eyalet bazlı dağılım analiz edilmiştir.
 
 
+## Dashboard Preview
+
+![Dashboard Preview](
+## Dashboard Preview
+
+![Dashboard Preview](dashboard.pdf.pdf)
+
+## Dashboard İçeriği)
+
+## Dashboard İçeriği
 ## Dashboard İçeriği
 
 * Customers
