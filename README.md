@@ -16,7 +16,7 @@ Bu bölümde e-ticaret verileri üzerinde yazdığım SQL sorguları yer almakta
 * `Toplama Fonksiyonları.sql`
   COUNT, SUM, AVG, MIN ve MAX gibi aggregate fonksiyonları ile temel metrik analizleri.
 
-* `Join.sql`
+- `Join.sql`  
   Müşteri, sipariş, ödeme ve ürün tablolarını JOIN kullanarak birleştirme çalışmaları.
 
 * `Ortak Tablo İfadesi.sql`
