@@ -38,10 +38,10 @@ FROM df_OrderItems;
 SELECT 
     C.customer_id,
     SUM(OI.Price) AS Total_Customer_Spending
-FROM df_Customers AS C
-JOIN df_Orders AS O
+FROM df_Customers C
+JOIN df_Orders O
     ON C.customer_id = O.customer_id
-JOIN df_OrderItems AS OI
+JOIN df_OrderItems OI
     ON O.order_id = OI.order_id
 GROUP BY 
     C.customer_id
