@@ -10,21 +10,21 @@
 
 -- Tüm ilişkili tablolarda eşleşen satış kayıtlarını getirir.
 SELECT
-    c.customer_id,
-    c.customer_city,
-    oi.price,
-    o.order_status,
-    p.payment_value,
-    ps.product_category_name
-FROM df_customers AS c
-JOIN df_orders AS o 
-    ON c.customer_id = o.customer_id
-JOIN JOIN df_OrderItems AS oi  AS oi 
-    ON o.order_id = oi.order_id
-JOIN df_payments AS p
-    ON oi.order_id = p.order_id
-JOIN df_products AS ps 
-    ON oi.product_id = ps.product_id;
+c.customer_id,
+c.customer_city,
+oi.price,
+o.order_status,
+p.payment_value,
+ps.product_category_name
+FROM df_Customers C
+JOIN df_Orders O 
+ON c.customer_id = o.customer_id
+JOIN df_OrderItems oi
+ON o.order_id = oi.order_id
+JOIN df_Payments P
+ON oi.order_id = p.order_id
+JOIN df_Products ps
+ON oi.product_id = ps.product_id;
 
 
 /* ---------------------------------------------------------------------------------
@@ -38,10 +38,10 @@ SELECT
     c.city,
     p.productname,
     o.amount
-FROM customers AS c
-LEFT JOIN orders AS o 
+FROM customers c
+LEFT JOIN orders o 
     ON c.CustomerID = o.CustomerID
-LEFT JOIN products AS p
+LEFT JOIN products p
     ON o.ProductID = p.ProductID;
 
 
@@ -57,10 +57,10 @@ SELECT
     o.amount,
     p.category,
     p.productname
-FROM customers AS c
-FULL JOIN orders AS o
+FROM customers c
+FULL JOIN orders o
     ON c.CustomerID = o.CustomerID
-FULL JOIN products AS p 
+FULL JOIN products p 
     ON o.ProductID = p.ProductID;
 
 
@@ -76,8 +76,8 @@ SELECT
     o.amount,
     p.category,
     p.productname
-FROM customers AS c
-RIGHT JOIN orders AS o
+FROM customers c
+RIGHT JOIN orders o
     ON c.CustomerID = o.CustomerID
-RIGHT JOIN products AS p 
+RIGHT JOIN products p 
     ON o.ProductID = p.ProductID;
