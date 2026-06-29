@@ -15,8 +15,4 @@ Bu dosyalar is odakli ana proje degil; SQL konularini ogrenmek ve pekistirmek ic
 | `Subquery and Deep Filter Analysis.sql` | Alt sorgu ve detayli filtreleme pratikleri |
 | `Window Function Expression.sql` | ROW_NUMBER ve window function pratikleri |
 
-## Not
 
-Daha is odakli ve duzenli SQL portfoy calismasi icin ana proje klasoru:
-
-[`Ecommerce_Business_SQL_Analysis`](../Ecommerce_Business_SQL_Analysis)
