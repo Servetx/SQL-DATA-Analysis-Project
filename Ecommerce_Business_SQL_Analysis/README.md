@@ -30,12 +30,12 @@ Projenin hedefi:
 
 | Dosya | Icerik |
 | --- | --- |
+| `00_Data_Preparation.sql` | Sayisal analiz icin veri tipi hazirligi ve product_weight_g temizligi |
 | `01_Business_Aggregate_Analysis.sql` | COUNT, SUM, AVG, MIN, MAX, GROUP BY ve CASE WHEN ile temel is analizleri |
 | `02_Business_Join_Analysis.sql` | Musteri, siparis, urun ve odeme tablolarini JOIN ile birlestiren analizler |
 | `03_Business_CTE_Analysis.sql` | WITH / CTE kullanarak ara sonuc tablolari ile is analizleri |
 | `04_Business_Window_Function_Analysis.sql` | ROW_NUMBER ile musteri, kategori, satici, odeme turu, sehir ve eyalet siralama analizleri |
 | `05_Data_Quality_Checks.sql` | Tekrar eden ID, negatif tutar, bos kategori ve eslesmeyen kayit kontrolleri |
-| `project_explanation_notes.md` | Projeyi mulakatta veya portfoyde anlatmak icin kisa notlar |
 
 ## Cevaplanan Is Sorulari
 
@@ -53,6 +53,15 @@ Bu projede asagidaki is sorularina SQL ile cevap verilmistir:
 - Fiyat, kargo ve odeme tutarlarinda hatali deger var mi?
 - Urun kategorisi bos olan kayitlar var mi?
 - Siparis ve siparis kalemleri ilgili ana tablolarla eslesiyor mu?
+
+## Ornek Data Quality Bulgulari
+
+Bu proje kapsaminda yapilan veri kalite kontrollerinde asagidaki bulgular elde edilmistir:
+
+- `product_category_name` alaninda `NULL` kayit bulunmadi.
+- `product_category_name` alaninda 308 kayit bos metin (`EMPTY_STRING`) olarak tespit edildi.
+- `product_weight_g` alaninda sayisal tipe cevrilemeyen 15 kayit `NULL` olarak isaretlendi.
+- Ortalama agirlik hesaplari gecerli, sayisal ve `NULL` olmayan agirlik degerleri uzerinden yapildi.
 
 ## Kullanilan SQL Konulari
 
