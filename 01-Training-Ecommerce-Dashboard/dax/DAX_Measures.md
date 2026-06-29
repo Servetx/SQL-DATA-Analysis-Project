@@ -9,7 +9,7 @@ Customers =
 DISTINCTCOUNT(facteCommerce[Customer ID])
 
 Orders =
-COUNTROWS(df_Orders)
+COUNTROWS(facteCommerce)
 
 Sales  =
 SUM(facteCommerce[Total Sale Amount])
