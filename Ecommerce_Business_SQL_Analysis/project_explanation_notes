@@ -1,0 +1,48 @@
+# Proje Aciklama Notlari
+
+## Kisa Portfoy Aciklamasi
+
+Bu proje, SQL Server kullanilarak e-ticaret veri seti uzerinde hazirlanmis is odakli analiz calismasidir.
+
+Proje; musteri dagilimi, odeme davranisi, satici performansi, urun kategorileri, gelir analizleri ve veri kalite kontrolleri gibi konulara odaklanir.
+
+## Proje Nasil Anlatilir?
+
+Once toplam siparis, musteri sayisi, urun geliri ve kargo geliri gibi temel metrikleri cikardim.
+
+Daha sonra `GROUP BY` ve `JOIN` kullanarak veriyi musteri, eyalet, sehir, odeme tipi, urun kategorisi ve satici bazinda analiz ettim.
+
+`CASE WHEN` ile fiyat ve odeme araliklari gibi is segmentleri olusturdum.
+
+`CTE` kullanarak ara sonuc tablolari hazirladim ve daha okunabilir sorgular yazdim.
+
+`ROW_NUMBER` ile musteri, kategori, satici, sehir ve eyalet bazinda siralama analizleri yaptim.
+
+Son bolumde veri kalite kontrolleri yaparak tekrar eden ID, negatif tutar, bos kategori ve eslesmeyen kayitlari kontrol ettim.
+
+## Kullanilan SQL Konulari
+
+- `COUNT` ve `COUNT(DISTINCT)` ile satir ve benzersiz kayit sayilari
+- `SUM`, `AVG`, `MIN`, `MAX` ile gelir, odeme ve aralik analizleri
+- `GROUP BY` ile analiz seviyesi belirleme
+- `HAVING` ile gruplandiktan sonra filtreleme
+- `CASE WHEN` ile veri siniflandirma
+- `JOIN` ile tablolar arasinda iliski kurma
+- `LEFT JOIN` ile eslesmeyen kayitlari bulma
+- `WITH` / CTE ile ara sonuc olusturma
+- `ROW_NUMBER` ile siralama analizi
+- `IS NULL` ve bos metin kontrolleri ile veri kalite analizi
+
+## Mulakatta Kisa Anlatim
+
+Bu projede SQL komutlarini sadece teknik olarak degil, is sorularina cevap verecek sekilde kullandim.
+
+Ornegin "en cok gelir getiren kategori hangisi?", "hangi musteriler daha cok harcama yapmis?", "hangi kayitlarda veri kalite problemi var?" gibi sorulari SQL ile analiz ettim.
+
+Veri kalite bolumunde sadece rapor uretmedim; ayni zamanda raporlarin guvenilirligini etkileyebilecek bos kategori, negatif tutar ve eslesmeyen ID gibi problemleri de kontrol ettim.
+
+## Durust Konumlandirma
+
+Bu calisma gercek sirket projesi degildir. Portfoy amacli bir e-ticaret vaka calismasidir.
+
+Amac, SQL bilgimi is mantigi ile birlestirebildigimi ve okunabilir analiz sorgulari yazabildigimi gostermektir.
