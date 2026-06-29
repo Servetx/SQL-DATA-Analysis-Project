@@ -1,6 +1,6 @@
 # DAX Measures
 
-Bu dosya, Brazil Olist E-Commerce Dashboard projesinde kullanılan temel DAX ölçülerini içerir.
+Bu dosya, Brazil Olist E-Commerce Dashboard projesinde kullanilan temel DAX olculerini icerir.
 
 ## Core KPI Measures
 
@@ -44,7 +44,7 @@ IF(
 )
 ```
 
-Aynı Previous Month, Growth ve Color mantığı Customers, Orders ve Payment Value KPI kartları için de uygulanmıştır.
+Ayni Previous Month, Growth ve Color mantigi Customers, Orders ve Payment Value KPI kartlari icin de uygulanmistir.
 
 ## Dynamic Month Highlight
 
@@ -124,7 +124,7 @@ SWITCH(
 ```
 
 ```dax
-PrevPrevious Month =
+Previous Month =
 VAR myPrevMonth =
     CALCULATE(
         SELECTEDVALUE('Calendar'[Month]),
