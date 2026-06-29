@@ -113,7 +113,7 @@ ORDER BY
 */
 SELECT
     product_category_name,
-    AVG(product_weight_g) AS average_product_weight
+    AVG(TRY_CAST(product_weight_g AS DECIMAL(18,2))) AS average_product_weight
 FROM df_Products
 GROUP BY
     product_category_name
