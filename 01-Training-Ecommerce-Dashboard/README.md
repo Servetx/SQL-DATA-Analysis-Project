@@ -42,7 +42,7 @@ Dashboard dosyasi PDF olarak goruntulenebilir:
 
 ## Kullanilan DAX Olculeri
 
-Bu dashboard'da kullanilan DAX olculeri ayri dosyada listelenmistir:
+Bu dashboard'da KPI kartlari, onceki ay karsilastirmalari, buyume oranlari ve kosullu renk formatlari icin DAX olculeri kullanilmistir.
 
 [DAX olculerini goruntule](dax/DAX_Measures.md)
 
