@@ -6,7 +6,7 @@ Amaç, öğrendiğim KPI kartlarını, slicer kullanımını, DAX ölçülerini,
 
 ## Dashboard Preview
 
-![Dashboard Preview](dashboard.pdf.pdf)
+![Dashboard Preview](dashboard-preview.png.PNG)
 
 ## Dashboard İçeriği
 
