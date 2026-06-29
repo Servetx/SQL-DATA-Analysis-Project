@@ -1,4 +1,3 @@
-[ROOT_README_FOR_GITHUB.md](https://github.com/user-attachments/files/29462645/ROOT_README_FOR_GITHUB.md)
 # SQL & Power BI E-Commerce Data Analysis Portfolio
 
 Bu repo, e-ticaret verileri uzerinde hazirladigim SQL veri analizi calismalari ve Power BI dashboard projelerini icerir.
