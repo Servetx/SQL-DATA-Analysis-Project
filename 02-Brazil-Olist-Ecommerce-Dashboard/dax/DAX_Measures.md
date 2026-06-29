@@ -4,6 +4,9 @@ Bu dosya, Brazil Olist E-Commerce Dashboard projesinde kullanilan temel DAX olcu
 
 ## Core KPI Measures
 
+Dashboard'daki temel KPI kartlarini hesaplamak icin kullanilmistir.  
+Customers musteri sayisini, Orders siparis sayisini, Payment Value toplam odeme tutarini, AOV ise ortalama siparis degerini gosterir.
+
 ```dax
 Customers =
 DISTINCTCOUNT(df_Customers[customer_id])
@@ -23,6 +26,7 @@ DIVIDE(
 
 ## Previous Month and Growth Measures
 
+KPI kartlarinda onceki ay degeri, buyume orani ve pozitif/negatif renk bilgisini gostermek icin kullanilmistir.
 ```dax
 AOV PM =
 CALCULATE(
@@ -46,7 +50,9 @@ IF(
 
 Ayni Previous Month, Growth ve Color mantigi Customers, Orders ve Payment Value KPI kartlari icin de uygulanmistir.
 
-## Dynamic Month Highlight
+## Highlighted Month Details
+
+Secili aylarin toplam satis icindeki oranini dinamik metin olarak gostermek icin kullanilmistir.
 
 ```dax
 Highlighted Month Details =
@@ -85,6 +91,10 @@ RETURN
     _result
 ```
 
+## Month Highlight Color
+
+Secilen aylari grafikte farkli renkle gostermek icin kullanilmistir.
+
 ```dax
 Month Highlight Color =
 VAR _selected_months =
@@ -101,8 +111,10 @@ VAR _result =
 RETURN
     _result
 ```
+## Month Switch
 
-## Month Label Measures
+Ay numarasini kisa ay adina cevirmek icin kullanilmistir.
+
 
 ```dax
 Month Switch =
@@ -122,6 +134,9 @@ SWITCH(
     12, "Dec"
 )
 ```
+## Previous Month
+
+KPI kartlarinda onceki ay bilgisini dinamik olarak gostermek icin kullanilmistir.
 
 ```dax
 Previous Month =
@@ -136,6 +151,8 @@ RETURN
 ```
 
 ## Calendar Table
+
+Tarih bazli analizler, onceki ay karsilastirmalari ve ay filtreleri icin kullanilan takvim tablosudur.
 
 ```dax
 Calendar =
@@ -154,4 +171,3 @@ ADDCOLUMNS(
         "Weekday"
     )
 )
-```
