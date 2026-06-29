@@ -1,49 +1,49 @@
 # Brazil Olist E-Commerce Dashboard
 
-Bu proje, Olist Brazil E-Commerce veri seti üzerinde geliştirdiğim Power BI dashboard çalışmasıdır.
+Bu proje, Olist Brazil E-Commerce veri seti uzerinde gelistirdigim Power BI dashboard calismasidir.
 
-Dashboard’da müşteri, sipariş, ödeme tutarı, ortalama sipariş değeri, ödeme tipi, kategori ve eyalet bazlı dağılım analiz edilmiştir.
-
+Dashboard'da musteri, siparis, odeme tutari, ortalama siparis degeri, odeme tipi, kategori ve eyalet bazli dagilim analiz edilmistir.
 
 ## Dashboard Preview
 
+Dashboard dosyasi PDF olarak goruntulenebilir:
 
-![Dashboard Preview](dashboard.pdf.pdf)
+[Dashboard PDF dosyasini goruntule](dashboard.pdf.pdf)
 
+## Dashboard Icerigi
 
-* Customers
-* Orders
-* Payment Value
-* AOV
-* Payment Value by Month
-* Payment Value by Payment Type
-* Payment Value by Customer State
-* Category Filter
+- Customers
+- Orders
+- Payment Value
+- AOV
+- Payment Value by Month
+- Payment Value by Payment Type
+- Payment Value by Customer State
+- Category Filter
 
-## Power BI Dashboardlarda Kullanılan Konular
+## Power BI Dashboardlarda Kullanilan Konular
 
-* KPI Kartları
-* DAX Ölçüleri
-* Önceki Ay Karşılaştırması
-* Büyüme Oranı Ölçüleri
-* Koşullu Biçimlendirme
-* Ay Dilimleyici
-* Kategori Dilimleyici / Filtresi
-* Donut Grafiği
-* Sütun Grafiği
-* Harita Görseli
-* Dinamik Ay Vurgulama
-* AOV Hesaplama
-* Ödeme Türü Analizi
-* Aylık Satış / Ödeme Analizi
+- KPI kartlari
+- DAX olculeri
+- Onceki ay karsilastirmasi
+- Buyume orani olculeri
+- Kosullu bicimlendirme
+- Ay dilimleyici
+- Kategori dilimleyici / filtresi
+- Donut grafigi
+- Sutun grafigi
+- Harita gorseli
+- Dinamik ay vurgulama
+- AOV hesaplama
+- Odeme turu analizi
+- Aylik odeme analizi
 
+## Kullanilan DAX Olculeri
 
-## Kullanılan DAX Ölçüleri
+Bu dashboard'da kullanilan DAX olculeri ayri dosyada listelenmistir:
 
-Dax Ölçüleri dax Adlı Klasörde 
+[DAX olculerini goruntule](dax/DAX_Measures.md)
 
+## Proje Amaci
 
-
-## Proje Amacı
-
-Bu projenin amacı, e-ticaret verisi üzerinden temel iş metriklerini analiz etmek ve bu metrikleri Power BI dashboard üzerinde anlaşılır şekilde sunmaktır.
+Bu projenin amaci, e-ticaret verisi uzerinden temel is metriklerini analiz etmek ve bu metrikleri Power BI dashboard uzerinde anlasilir sekilde sunmaktir.
