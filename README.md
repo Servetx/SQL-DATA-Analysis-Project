@@ -12,8 +12,6 @@ Bu klasor, e-ticaret veri seti uzerinde hazirlanmis is odakli SQL analiz projesi
 
 Bu projede sadece temel SQL sorgulari degil; musteri, siparis, urun, odeme, satici, gelir ve veri kalite kontrolleri gibi gercekci is sorulari SQL ile cevaplanmistir.
 
-[Ecommerce Business SQL Analysis klasorunu goruntule](Ecommerce_Business_SQL_Analysis)
-
 Kapsam:
 
 - Aggregate analizler: `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`
@@ -25,18 +23,12 @@ Kapsam:
 
 ## Repo Icerigi
 
-### SQL Pratik Sorgulari
-
-[SQL_Practice_Queries](SQL_Practice_Queries)  
-Temel SQL, toplama fonksiyonlari, JOIN, CTE, alt sorgu ve pencere fonksiyon pratiklerini iceren calisma dosyalari.
-
-### 3. Power BI Dashboard Calismalari
-
-[01-Training-Ecommerce-Dashboard](01-Training-Ecommerce-Dashboard)  
-Power BI egitiminde ogrendigim dashboard yapisini videoya bakmadan tekrar kurdugum calisma.
-
-[02-Brazil-Olist-Ecommerce-Dashboard](02-Brazil-Olist-Ecommerce-Dashboard)  
-Olist Brazil E-Commerce veri seti uzerinde gelistirdigim Power BI dashboard calismasi.
+| Klasor | Aciklama |
+| --- | --- |
+| [Ecommerce_Business_SQL_Analysis](Ecommerce_Business_SQL_Analysis) | Is odakli SQL portfoy projesi |
+| [SQL_Practice_Queries](SQL_Practice_Queries) | SQL pratik sorgulari |
+| [01-Training-Ecommerce-Dashboard](01-Training-Ecommerce-Dashboard) | Power BI egitim dashboard calismasi |
+| [02-Brazil-Olist-Ecommerce-Dashboard](02-Brazil-Olist-Ecommerce-Dashboard) | Brazil Olist Power BI dashboard calismasi |
 
 ## Kullanilan Teknolojiler
 
