@@ -1,3 +1,4 @@
+[ROOT_README_FOR_GITHUB.md](https://github.com/user-attachments/files/29462645/ROOT_README_FOR_GITHUB.md)
 # SQL & Power BI E-Commerce Data Analysis Portfolio
 
 Bu repo, e-ticaret verileri uzerinde hazirladigim SQL veri analizi calismalari ve Power BI dashboard projelerini icerir.
@@ -25,48 +26,23 @@ Kapsam:
 
 ## Repo Icerigi
 
-### 1. SQL Veri Analizi Calismalari
-
-Bu bolumde e-ticaret verileri uzerinde yazdigim SQL sorgulari yer almaktadir.
+### 1. Is Odakli SQL Projesi
 
 * `Ecommerce_Business_SQL_Analysis`  
-  Is odakli SQL portfoy projesi. Aggregate, JOIN, CTE, window functions ve data quality kontrollerini icerir.
+  Aggregate, JOIN, CTE, window functions ve data quality kontrollerini iceren ana SQL portfoy projesi.
 
-* `Basic.sql`  
-  Temel SELECT sorgulari, filtreleme, siralama ve veri kontrolu calismalari.
+### 2. SQL Pratik Sorgulari
 
-* `Aggregate Functions.sql`  
-  COUNT, SUM, AVG, MIN ve MAX gibi aggregate fonksiyonlari ile temel metrik analizleri.
+* `SQL_Practice_Queries`  
+  Temel SQL, aggregate functions, JOIN, CTE, subquery ve window function pratiklerini iceren calisma dosyalari.
 
-* `Joins.sql`  
-  Musteri, siparis, odeme ve urun tablolarini JOIN kullanarak birlestirme calismalari.
+### 3. Power BI Dashboard Calismalari
 
-* `Common Table Expressions.sql`  
-  CTE kullanarak sorgulari daha okunabilir ve duzenli hale getirme calismalari.
+* `01-Training-Ecommerce-Dashboard`  
+  Power BI egitiminde ogrendigim dashboard yapisini videoya bakmadan tekrar kurdugum calisma.
 
-* `Subquery and Deep Filter Analysis.sql`  
-  Alt sorgu kullanarak daha detayli filtreleme ve analiz calismalari.
-
-* `Window Function Expression.sql`  
-  ROW_NUMBER ve benzeri window function yapilari ile musteri siralama ve segmentasyon calismalari.
-
-## 2. Power BI Dashboard Calismalari
-
-### Training E-Commerce Dashboard
-
-Power BI egitiminde ogrendigim dashboard yapisini videoya bakmadan tekrar kurdugum calismadir.
-
-Bu dashboard'da KPI kartlari, satis grafikleri, odeme yontemi analizi, urun tablosu, ulke bazli satis analizi ve slicer kullanimi uygulanmistir.
-
-[Dashboard klasorunu goruntule](01-Training-Ecommerce-Dashboard)
-
-### Brazil Olist E-Commerce Dashboard
-
-Olist Brazil E-Commerce veri seti uzerinde gelistirdigim Power BI dashboard calismasidir.
-
-Bu dashboard'da musteri sayisi, siparis sayisi, odeme tutari, ortalama siparis degeri, odeme tipi dagilimi, kategori filtresi ve eyalet bazli dagilim analiz edilmistir.
-
-[Dashboard klasorunu goruntule](02-Brazil-Olist-Ecommerce-Dashboard)
+* `02-Brazil-Olist-Ecommerce-Dashboard`  
+  Olist Brazil E-Commerce veri seti uzerinde gelistirdigim Power BI dashboard calismasi.
 
 ## Kullanilan Teknolojiler
 
