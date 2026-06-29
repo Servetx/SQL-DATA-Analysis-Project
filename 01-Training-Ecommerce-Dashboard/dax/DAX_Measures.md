@@ -44,7 +44,7 @@ IF(
 )
 ```
 
-Ayni Previous Month, Growth ve Color mantigi Customers, Orders ve Payment Value KPI kartlari icin de uygulanmistir.
+Ayni Previous Month, Growth ve Color mantigi Customers, Orders ve Sales KPI kartlari icin de uygulanmistir.
 
 ## Country Sales Percentage
 
