@@ -1,8 +1,8 @@
 # Training E-Commerce Dashboard
 
-Bu proje, Power BI egitiminde ogrendigim dashboard yapisini videoya bakmadan tekrar kurarak gelistirdigim calismadir.
+Bu proje, Power BI egitiminde calistigim e-ticaret dashboard yapisini videoya bakmadan tekrar kurarak gelistirdigim bir calismadir.
 
-Amac, KPI kartlarini, slicer kullanimini, DAX olculerini, grafik duzenini ve dashboard tasarim mantigini kendi basima tekrar uygulayabilmekti.
+Amac, KPI kartlarini, dilimleyici kullanimini, DAX olculerini, grafik duzenini ve dashboard tasarim mantigini kendi basima tekrar uygulayabilmekti.
 
 ## Dashboard Preview
 
@@ -31,7 +31,7 @@ Dashboard dosyasi PDF olarak goruntulenebilir:
 - Buyume orani olculeri
 - Kosullu bicimlendirme
 - Ay dilimleyici
-- Kategori dilimleyici / filtresi
+- Kategori dilimleyici / filtre
 - Donut grafigi
 - Sutun grafigi
 - Harita gorseli
