@@ -6,17 +6,17 @@ Bu dosya, Training E-Commerce Dashboard projesinde kullanilan DAX olculerini ice
 
 ```dax
 Customers =
-DISTINCTCOUNT(df_Customers[customer_id])
+DISTINCTCOUNT(facteCommerce[Customer ID])
 
 Orders =
 COUNTROWS(df_Orders)
 
-Payment Value =
-SUM(df_Payments[payment_value])
+Sales  =
+SUM(facteCommerce[Total Sale Amount])
 
 AOV =
 DIVIDE(
-    [Payment Value],
+    [Sales],
     [Orders]
 )
 ```
