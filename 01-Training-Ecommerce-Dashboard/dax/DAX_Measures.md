@@ -194,6 +194,7 @@ ADDCOLUMNS(
     )
 )
 
+
 ## Previous Month
 
 KPI kartlarinda onceki ay bilgisini dinamik olarak gostermek icin kullanilmistir.
