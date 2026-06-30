@@ -21,6 +21,7 @@ Dashboard dosyasi PDF olarak goruntulenebilir, Power BI proje dosyasi ise PBIX f
 - Payment Value by Payment Type
 - Payment Value by Customer State
 - Category Filter
+- Month Slicer
 
 ## Power BI Dashboardlarda Kullanilan Konular
 
