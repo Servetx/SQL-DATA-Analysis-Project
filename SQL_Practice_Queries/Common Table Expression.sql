@@ -1,24 +1,21 @@
 /* =============================================================
    CTE AND CUSTOMER TOTAL SALES ANALYSIS
    ============================================================= */
-
--- Her müşterinin toplam harcamasını CTE içinde hesaplar.
-WITH Toplamlar AS (
+ --CTE icinde musteriler ve siparisler birlestirilir
+-- Her musteri icin toplam harcama tutari hesaplanir.
+-WITH Toplamlar AS (
     SELECT 
-        CustomerID,
-        SUM(Amount) AS Toplam_Miktar
-    FROM Orders
+        C.CustomerID,
+        C.CustomerName,
+        SUM(O.Amount) AS Toplam_Miktar
+    FROM Customers C
+    JOIN Orders O
+        ON C.CustomerID = O.CustomerID
     GROUP BY 
-        CustomerID
+        C.CustomerID,
+        C.CustomerName
 )
-
--- CTE sonucunu müşteri bilgileriyle birleştirir.
--- Müşteriler toplam harcama tutarına göre büyükten küçüğe sıralandı.
 SELECT 
-    C.CustomerName,
-    T.Toplam_Miktar
-FROM Customers C
-JOIN Toplamlar T
-    ON C.CustomerID = T.CustomerID
-ORDER BY 
-    T.Toplam_Miktar DESC;
+    CustomerName,
+    Toplam_Miktar
+FROM Toplamlar;
