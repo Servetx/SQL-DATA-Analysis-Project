@@ -6,7 +6,10 @@ Amac, KPI kartlarini, dilimleyici kullanimini, DAX olculerini, grafik duzenini v
 
 ## Dashboard Preview
 
-Dashboard dosyasi PDF olarak goruntulenebilir:
+Dashboard dosyasi PDF olarak goruntulenebilir, Power BI proje dosyasi ise PBIX formatinda indirilebilir.
+
+- [Dashboard PDF dosyasini goruntule](dashboard.pdf.pdf)
+- [Power BI PBIX dosyasini indir](dashboard.pbix)
 
 [Dashboard PDF dosyasini goruntule](dashboard.pdf.pdf)
 
