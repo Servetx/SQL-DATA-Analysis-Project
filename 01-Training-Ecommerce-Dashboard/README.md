@@ -26,7 +26,6 @@ Dashboard dosyasi PDF olarak goruntulenebilir, Power BI proje dosyasi ise PBIX f
 - Category Slicer
 
 ## Uygulanan Konular
-
 - KPI kartlari
 - DAX olculeri
 - Onceki ay karsilastirmasi
@@ -36,11 +35,11 @@ Dashboard dosyasi PDF olarak goruntulenebilir, Power BI proje dosyasi ise PBIX f
 - Kategori dilimleyici / filtre
 - Donut grafigi
 - Sutun grafigi
-- Harita gorseli
 - Dinamik ay vurgulama
 - AOV hesaplama
 - Odeme turu analizi
-- Aylik satis / odeme analizi
+- Aylik satis analizi
+- Ulke / kita bazli satis analizi
 
 ## Kullanilan DAX Olculeri
 
